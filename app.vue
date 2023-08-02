@@ -1,5 +1,11 @@
 <template>
-  <div class="flex mx-auto bg-black text-white h-screen w-full">
+  <div class=" 
+    mx-auto 
+    bg-slate-800 
+    text-white 
+    h-screen 
+    w-full
+  ">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
