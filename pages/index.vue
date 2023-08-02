@@ -1,7 +1,6 @@
 <script setup>
     import{ ref,onMounted} from 'vue'
 
-    const 
 </script>
 <template>
     <div class="
