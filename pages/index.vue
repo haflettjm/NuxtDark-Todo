@@ -1,5 +1,5 @@
 <script setup>
-    import{ ref,onMounted} from 'vue'
+import{ ref, onMounted} from 'vue'
 
 </script>
 <template>
@@ -15,7 +15,6 @@
         <div class="
             my-8
             justify-center
-            flexbox
             bg-slate-700
             p-8
             w-10/12
@@ -23,7 +22,7 @@
             text-center
             rounded-md
         ">
-            <h1>
+            <h1 class="my-2">
                 Todo App
             </h1>
             <div class="
@@ -32,9 +31,7 @@
                 space-x-2
             ">
                 <div>
-                    <form>
-                        Input Text...
-                    </form>
+                    <input v-model="text" placeholder="Enter Todo Here...">
                 </div>
                 <div>
                     <ul>
@@ -43,10 +40,16 @@
                         </li>
                     </ul>
                 </div>
-                <button>
-                    click me!
-                </button>
+
             </div>
+            <button class="
+                    bg-yellow-300
+                    p-4
+                    rounded-md
+                    my-8
+                ">
+                    click me!
+            </button>
         </div>
     </div>
 
