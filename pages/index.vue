@@ -1,6 +1,6 @@
 <script setup>
 import{ ref, onMounted} from 'vue'
-
+const todos = ref(["todo1", "todo2", "todo3"])
 </script>
 <template>
     <div class="
@@ -35,8 +35,8 @@ import{ ref, onMounted} from 'vue'
                 </div>
                 <div>
                     <ul>
-                        <li>
-                            Todo 1
+                        <li v-for="item in todos">
+                            {{item}}
                         </li>
                     </ul>
                 </div>
