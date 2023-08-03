@@ -33,20 +33,33 @@
             </h1>
             <div class="
                 flex
-                justify-center
+                justify-evenly
                 space-x-2
             ">
                 <div class="flex-col">
                     <div>
-                        <input 
-                            class="
-                                text-black
-                                rounded
-                                p-4
-                                " 
-                            v-model="input"
-                            type="text" 
-                            placeholder="Enter Todo Here...">
+                        <textarea id="message" rows="2"
+                        v-model="input"
+                        type="text" 
+                        class=" 
+                            block 
+                            p-2.5 
+                            w-full 
+                            text-sm 
+                            text-white
+                            bg-gray-50 
+                            rounded-lg border 
+                            border-gray-300 
+                            focus:ring-blue-500 
+                            focus:border-blue-500 
+                            dark:bg-gray-700 
+                            dark:border-gray-600 
+                            dark:placeholder-gray-400 
+                            dark:text-white 
+                            dark:focus:ring-blue-500 
+                            dark:focus:border-blue-500" 
+                        placeholder="Enter Todo">
+                        </textarea>
                     </div>
                     <div>
                         <button 
@@ -63,7 +76,10 @@
                         </button>
                     </div>
                 </div>
-                <div>
+                <div class="
+                    mx-6
+                ">
+                    <h4 class="font-bold underline">Current Tasks:</h4>
                     <ul>
                         <li v-for="item in todos">
                             {{ item }}
